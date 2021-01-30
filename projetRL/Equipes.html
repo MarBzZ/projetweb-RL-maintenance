@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<link rel="stylesheet" href="decoration/item.css">
+	<meta charset="utf-8">
+	<title>rocketleague-fans</title>
+</head>
+<body onload="remplacerLienParImage()">
+<header>
+<nav>
+	<h1>Rocket League Fans</h1>
+	<ul>
+		<li><a href="index.html">Accueil</a></li>
+		<li><a href="liste.html">Articles</a>
+			<ul>
+				<li><a href="Equipes.html">Equipes</a></li>
+				<li><a href="Joueurs.html">Joueurs</a></li>
+				<li><a href="Techniques.html">Techniques</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Compétition</a>
+			<ul>
+				<li><a href="RLCS.html">RLCS</a></li>
+				<li><a href="ESL.html">ESL</a></li>
+			</ul>
+		</li>
+		<li><a href="Contacter.html">Contacter</a></li>
+		<li><a href="#">Connexion</a>
+			<ul>
+				<li><a href="Connexion.html">Se connecter</a></li>
+				<li><a href="Inscription.html">S'inscrire</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+</header>
+<h2>Les Équipes Populaires</h2>
+<main>
+		<script>
+				function remplacerLienParImage()
+				{
+					var lienCloud9 = new Image();
+					var lienNRG = new Image();
+					var lienG2 = new Image();
+		
+					lienCloud9.src = './decoration/cloud99.png';
+					lienNRG.src = './decoration/NRG.png';
+					lienG2.src = './decoration/G2.png';
+		
+					lienCloud9.onclick = function()
+					{
+						window.location.href = 'https://www.cloud9.gg/';
+					};
+					lienNRG.onclick = function()
+					{
+						window.location.href = 'http://www.nrg.gg/';
+					};
+					lienG2.onclick = function()
+					{
+						window.location.href = 'https://www.g2esports.com/';
+					};
+		
+					lienCloud9.style.size = '45px';
+					lienNRG.style.size = '45px';
+					lienG2.style.size = '45px';
+		
+					document.getElementById("img").appendChild(lienCloud9);
+					document.getElementById("img1").appendChild(lienNRG);
+					document.getElementById("img2").appendChild(lienG2);
+				}
+		</script>
+
+		<div class="flex" >
+				<article class="mesImages">
+	                <a href="https://www.cloud9.gg/" id="img"></a>
+	                <p><b>Cloud9 (C9) is an American esports organization, which fields teams in Rocket League, League of Legends, Counter-Strike: Global Offensive, Hearthstone: Heroes of Warcraft, Super Smash Bros. Melee, H1Z1, Fortnite, Overwatch, PlayerUnknown's Battlegrounds,[1] and Rules of Survival.</b> </p>
+	            </article>
+	            <article class="mesImages">
+	                <a href="http://www.nrg.gg/" id="img1"></a>
+	                <p><b>Fueled by the energy of talented individuals, this particular team represents the concentrated ambition to achieve one goal. That goal: to build the ideal esports team for many years to come.
+					Led by the expertise of traditional sports and the tech biz, NRG Esports is looking to set precedence in the industry of esports.</b> </p>
+	            </article>
+	            <article class="mesImages">
+	                
+					<a href="https://www.g2esports.com/" id="img2"></a>
+	                <p><b>G2 Esports is a World Premier Esports Club representing some of the best competitive players around the globe. It was built with the desire to bring innovation into esports team management and business whilst upholding our core values of professionalism.</b> </p>
+	       		</article>
+	    </div>
+</main>
+
+<footer>
+	
+</footer>
+
+
+</body>
+</html>

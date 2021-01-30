@@ -1,0 +1,85 @@
+body{
+	background-color:black;
+	color:blue;
+	font-size:20px;
+}
+
+h1{
+	font-family:"Dancing Script",cursive;
+	text-align:center;
+}
+
+form{
+	color:blue;
+	font-weight:bold;
+	margin-bottom:15px;
+	width:25%;
+	margin:auto;
+}
+
+input [type="text"],input [type="tel"],input [type="date"]{	
+	width:85%;
+	height:30px;
+	background-color:blue;
+}
+
+input [type="text"]:hover,input [type="tel"]:hover,input [type="date"]:hover{
+	background-color:#E2E2E2;
+}
+
+input [type="text"]:focus,input [type="tel"]:focus,input [type="date"]:focus,
+	select:focus{
+		outline:none;
+	}
+}
+
+select{
+	width:50%;
+	height:30px;
+	background-color:blue;
+	padding-left:20px;
+}
+
+p{
+	text-align:center;
+}
+
+.nom{
+	background-image:url(nom.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	padding-left:40px;
+}
+
+.tel{
+	background-image:url(tel.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	padding-left:40px;
+}
+
+.age{
+	background-image:url(age.png);
+	background-position:left;
+	background-repeat:no-repeat;
+	padding-left:40px;
+}
+
+input[type="submit"]{
+	padding:20px;
+	border-radius:50px;
+	border:0;
+	background-color:blue;
+	font-size:16px;
+	color:#fff;
+}
+
+input[type="submit"]:hover{
+	background-color:#fff;
+	color:blue;
+}
+@media screen and (max-width:500px){
+	form{
+		width:100%;
+	}
+}

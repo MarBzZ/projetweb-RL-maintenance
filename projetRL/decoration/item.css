@@ -1,0 +1,115 @@
+h1
+{
+	color:white;
+	text-align:center;
+	font-size:25px;
+}
+h2
+{
+	color:white;
+	margin:auto;
+	text-align:center;
+	padding-top:2%;
+	font-size:30px;
+}
+nav ul 
+{
+	
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+
+}
+nav li
+{
+	display:inline-block;
+	position:relative;
+}
+
+nav li a
+{
+	background-color:blue;
+	font-weight:bold;
+	color:white;
+	display:block;
+	text-decoration:none;
+	margin:20px;
+	padding:10px;
+	width:150px;
+}
+
+nav ul li ul li
+{
+	display:none;
+}
+
+nav ul li:hover ul 
+{
+	display:block;
+
+}
+
+nav li ul
+{
+	position:absolute;
+}
+
+nav li a:hover
+{
+	background-color:white;
+}
+nav ul li a:hover
+{
+	color:blue;
+}
+body
+{
+	background-color:black;
+}
+
+.flex
+{
+	display:flex;
+	width:100%;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.mesImages
+{
+	width:33%;
+}
+#img
+{
+	margin:auto;
+	height:auto; 
+	display:block;
+}
+#img1
+{
+	margin:auto;
+	height:auto; 
+	display:block;
+	padding-top:5%;
+}
+#img2
+{
+	margin:auto;
+	height:auto; 
+	display:block;
+}
+p
+{
+	color:white;
+	width:95%;
+	font-size:20px;
+}
+body
+{
+	background-image:url("item-background.jpg");
+	background-size: 100% 100%;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: right top;
+}
