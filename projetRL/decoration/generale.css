@@ -4,10 +4,17 @@ h1
 {
 	color:white;
 	text-align:center;
+	font-size:40px;
 }
+
+nav
+{
+	/*margin-bottom:6em; */
+}
+
 nav ul 
 {
-	background-color:black;
+	background-color:transparent;
 	margin:0;
 	padding:0;
 	list-style-type:none;
@@ -23,6 +30,7 @@ nav li
 nav li a
 {
 	font-weight:bold;
+	font-size:20px;
 	color:white;
 	display:block;
 	text-decoration:none;
@@ -46,16 +54,26 @@ nav li ul
 	position:absolute;
 }
 
-nav ul li:hover
-{
-	background-color:blue;
-}
 body
 {
-	background-image:url("rocketleague.jpg");
+	background-image:url("liste-background.jpg");
 	background-size: 100% 100%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position: right top;
+	margin:0;
+}
+
+.scale-effect
+{
+	transition:transform 0.5s;
+}
+	
+.scale-effect:hover
+{
+	transform:scale(1.1);
+	text-decoration:underline;
+	color:black;
+	background-color:GhostWhite;
 }
 

@@ -5,30 +5,30 @@
 	<meta charset="utf-8">
 	<title>rocketleague-fans</title>
 </head>
-<body onload="remplacerLienParImage()">
+<body>
 <header>
 <nav>
 	<h1>Rocket League Fans</h1>
 	<ul>
-		<li><a href="index.html">Accueil</a></li>
-		<li><a href="liste.html">Articles</a>
+		<li><a class="scale-effect" href="index.html">Accueil</a></li>
+		<li><a class="scale-effect" href="liste.html">Articles</a>
 			<ul>
-				<li><a href="Equipes.html">Equipes</a></li>
-				<li><a href="Joueurs.html">Joueurs</a></li>
-				<li><a href="Techniques.html">Techniques</a></li>
+				<li><a class="scale-effect" href="Equipes.html">Equipes</a></li>
+				<li><a class="scale-effect" href="Joueurs.html">Joueurs</a></li>
+				<li><a class="scale-effect" href="Techniques.html">Techniques</a></li>
 			</ul>
 		</li>
-		<li><a href="#">Compétition</a>
+		<li><a class="scale-effect" href="#">Compétition</a>
 			<ul>
-				<li><a href="RLCS.html">RLCS</a></li>
-				<li><a href="ESL.html">ESL</a></li>
+				<li><a class="scale-effect" href="RLCS.html">RLCS</a></li>
+				<li><a class="scale-effect" href="ESL.html">ESL</a></li>
 			</ul>
 		</li>
-		<li><a href="Contacter.html">Contacter</a></li>
-		<li><a href="#">Connexion</a>
+		<li><a class="scale-effect" href="Contacter.html">Contacter</a></li>
+		<li><a class="scale-effect" href="Connexion.html">Connexion</a>
 			<ul>
-				<li><a href="Connexion.html">Se connecter</a></li>
-				<li><a href="Inscription.html">S'inscrire</a></li>
+				<li><a class="scale-effect" href="Connexion.html">Se connecter</a></li>
+				<li><a class="scale-effect" href="Inscription.html">S'inscrire</a></li>
 			</ul>
 		</li>
 	</ul>
@@ -36,16 +36,16 @@
 </header>
 <h2>Les Équipes Populaires</h2>
 <main>
-		<script>
+		<!--script>
 				function remplacerLienParImage()
 				{
 					var lienCloud9 = new Image();
 					var lienNRG = new Image();
 					var lienG2 = new Image();
 		
-					lienCloud9.src = './decoration/cloud99.png';
+					lienCloud9.src = './decoration/cloud9.png';
 					lienNRG.src = './decoration/NRG.png';
-					lienG2.src = './decoration/G2.png';
+					lienG2.src = './decoration/G2.jpeg';
 		
 					lienCloud9.onclick = function()
 					{
@@ -64,28 +64,39 @@
 					lienNRG.style.size = '45px';
 					lienG2.style.size = '45px';
 		
-					document.getElementById("img").appendChild(lienCloud9);
-					document.getElementById("img1").appendChild(lienNRG);
-					document.getElementById("img2").appendChild(lienG2);
+					document.getElementById("img1").appendChild(lienCloud9);
+					document.getElementById("img2").appendChild(lienNRG);
+					document.getElementById("img3").appendChild(lienG2);
 				}
-		</script>
-
-		<div class="flex" >
-				<article class="mesImages">
-	                <a href="https://www.cloud9.gg/" id="img"></a>
+		</script-->
+	
+	
+		<article id="article" >
+				<div class="articles">
+				  <a href="https://www.cloud9.gg/">
+					<img src="decoration/cloud9.png" class="image">
+				  </a>
+					<h3>Cloud9</h3>
 	                <p><b>Cloud9 (C9) is an American esports organization, which fields teams in Rocket League, League of Legends, Counter-Strike: Global Offensive, Hearthstone: Heroes of Warcraft, Super Smash Bros. Melee, H1Z1, Fortnite, Overwatch, PlayerUnknown's Battlegrounds,[1] and Rules of Survival.</b> </p>
-	            </article>
-	            <article class="mesImages">
-	                <a href="http://www.nrg.gg/" id="img1"></a>
+	            </div>
+				
+	            <div class="articles">
+				  <a href="https://www.cloud9.gg/">
+	                <img src="decoration/NRG.png" class="image">
+				  </a>
+				  <h3>NRG</h3>
 	                <p><b>Fueled by the energy of talented individuals, this particular team represents the concentrated ambition to achieve one goal. That goal: to build the ideal esports team for many years to come.
 					Led by the expertise of traditional sports and the tech biz, NRG Esports is looking to set precedence in the industry of esports.</b> </p>
-	            </article>
-	            <article class="mesImages">
-	                
-					<a href="https://www.g2esports.com/" id="img2"></a>
+	            </div>
+				
+	            <div class="articles">
+	              <a href="https://www.cloud9.gg/">
+					<img src="decoration/G2.jpg" class="image">
+				  </a>
+					<h3>G2</h3>
 	                <p><b>G2 Esports is a World Premier Esports Club representing some of the best competitive players around the globe. It was built with the desire to bring innovation into esports team management and business whilst upholding our core values of professionalism.</b> </p>
-	       		</article>
-	    </div>
+	       		</div>
+	    </article>
 </main>
 
 <footer>

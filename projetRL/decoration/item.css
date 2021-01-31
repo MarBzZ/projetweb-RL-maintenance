@@ -2,7 +2,7 @@ h1
 {
 	color:white;
 	text-align:center;
-	font-size:25px;
+	font-size:40px;
 }
 h2
 {
@@ -10,11 +10,25 @@ h2
 	margin:auto;
 	text-align:center;
 	padding-top:2%;
+	padding-bottom:2%;
 	font-size:30px;
 }
+
+h3
+{
+	color:black;
+	text-align:center;
+	font-size:25px;
+}
+
+nav
+{
+	margin-bottom:8em;
+}
+
 nav ul 
 {
-	
+	background-color:transparent;
 	margin:0;
 	padding:0;
 	list-style-type:none;
@@ -29,17 +43,16 @@ nav li
 
 nav li a
 {
-	background-color:blue;
+	font-size:20px;
 	font-weight:bold;
 	color:white;
 	display:block;
 	text-decoration:none;
-	margin:20px;
 	padding:10px;
 	width:150px;
 }
 
-nav ul li ul li
+nav ul li ul
 {
 	display:none;
 }
@@ -55,14 +68,6 @@ nav li ul
 	position:absolute;
 }
 
-nav li a:hover
-{
-	background-color:white;
-}
-nav ul li a:hover
-{
-	color:blue;
-}
 body
 {
 	background-color:black;
@@ -76,40 +81,78 @@ body
 	padding:0;
 	text-align:center;
 }
-.mesImages
+
+#article
 {
-	width:33%;
-}
-#img
-{
+	width:800px;
+	position:relative;
 	margin:auto;
-	height:auto; 
-	display:block;
 }
+
+.articles
+{
+	text-align:center;
+	display:block;
+	border: solid white 5px;
+	margin:3%;
+}
+
 #img1
 {
 	margin:auto;
 	height:auto; 
 	display:block;
-	padding-top:5%;
 }
 #img2
 {
 	margin:auto;
 	height:auto; 
 	display:block;
+	padding-top:5%;
 }
+#img3
+{
+	margin:auto;
+	height:auto; 
+	display:block;
+}
+
 p
 {
-	color:white;
-	width:95%;
+	color:black;
+	text-align:center;
 	font-size:20px;
 }
+
+div
+{
+	background-color:white;
+}
+
 body
 {
-	background-image:url("item-background.jpg");
+	background-image:url("liste-background.jpg");
 	background-size: 100% 100%;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position: right top;
+	margin:0;
+}
+
+.image
+{
+	width:100%;
+}
+
+.scale-effect
+{
+	transition:transform 0.5s;
+}
+	
+.scale-effect:hover
+{
+	transform:scale(1.1);
+	text-decoration:underline;
+	color:black;
+	background-color:GhostWhite;
 }
