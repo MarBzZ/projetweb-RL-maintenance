@@ -7,9 +7,19 @@ h1
 	font-size:40px;
 }
 
+h2
+{
+	color:white;
+	margin:auto;
+	text-align:center;
+	padding-top:2%;
+	font-size:35px;
+	padding-bottom:2%;
+}
+
 nav
 {
-	/*margin-bottom:6em; */
+	margin-bottom:8em;
 }
 
 nav ul 
@@ -62,6 +72,27 @@ body
 	background-attachment:fixed;
 	background-position: right top;
 	margin:0;
+}
+
+#description
+{
+	text-align:center;
+	color:white;
+	font-size:21px;
+	margin-bottom:5em;
+}
+
+.description
+{
+	width:60%;
+	margin:auto;
+}
+
+.video-presentation
+{
+	width:60%;
+	margin:auto;
+	padding-bottom:3em;
 }
 
 .scale-effect
